@@ -50,3 +50,22 @@ font, backg
 .cp-text-white {
   color: white;
 }
+.header{
+  height: 600px;
+  width: 100%;
+  background-color:pink;
+  overflow: hidden;
+}
+.top{
+  top:0px;
+}
+
+.z10{
+  z-index: 10;
+}
+.z10{
+  z-index: 15;
+}
+.z10{
+  z-index: 20;
+}
