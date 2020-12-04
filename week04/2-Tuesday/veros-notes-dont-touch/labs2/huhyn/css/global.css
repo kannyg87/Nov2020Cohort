@@ -46,8 +46,22 @@ color: #14213d;
 color: #fca311;
 }
 
+<<<<<<< HEAD
 .cp-text-lightGray {
 color: #e5e5e5; 
+=======
+.cp-text-accent a{
+  color: #e5e5e5;
+>>>>>>> d97b7b1e6d543b955db775990bae3a73c42a4509
+}
+
+.cp-text-accent a:hover{
+  color: #fca311;
+  text-decoration: underline;
+}
+
+.cp-text-lightGray {
+  color: #e5e5e5; 
 }
 
 .cp-text-white {
@@ -69,4 +83,21 @@ height: 400px;
 background-color: white;
 width: 100%;
 height: 400px;
+}
+
+
+.cp-text-lightGray a{
+  color: #e5e5e5; 
+}
+
+.dark {
+  background-color:#e5e5e5;
+  width: 100%;
+  height: 400px;
+}
+
+.light {
+  background-color: white;
+  width: 100%;
+  height: 400px;
 }
