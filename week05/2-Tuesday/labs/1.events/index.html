@@ -17,9 +17,42 @@
     <li><img src="images/gry.gif" alt="gray" id="gray"></li>
     <li><img src="images/red.gif" alt="red" id="red"></li>
   </ul>
-
+  <div id ="response"></div>
   
   <script>
+    let pink = document.querySelector('#pink');
+
+    let response =document.querySelector('#response');
+    pink.addEventListener('click', () =>{
+      response.textContent ="you 've clicked on the pinl image"
+    });
+
+    let ul = document.querySelector('ul');
+
+    let responce = document.querySelector('#response');
+    ul.addEventListener('click', (e)=>{
+      switch(e.target.id){
+        case 'pink':
+        response.textContent = `you selected  ${e.target.id} `;
+        break;
+        case 'yello':
+        response.textContent = "you 've cliked in yellow color ";
+        break;
+        case 'red':
+        response.textContent = "you 've cliked in pink red ";
+        break;
+        case 'blue':
+        response.textContent = "you 've cliked in blue color ";
+        break;
+        case 'green':
+        response.textContent = "you 've cliked in grean color ";
+        break;
+        default:
+          response.textContent = "color not found";
+      }
+    })
+
+
 
     
   </script>

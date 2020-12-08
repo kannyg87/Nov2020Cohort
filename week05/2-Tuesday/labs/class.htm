@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        background-color: yellow;
+        padding: 20px;
+        height: 200px;
+        width: 200px;
+    }
+    p{
+        background-color: pink;
+
+    }
+</style>
+<body>
+    <button onclick='alert("hello")' >click me </button>
+    <div onmouseover="greeting()">
+
+        hello
+    </div>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste tenetur fuga repudiandae modi facilis, culpa debitis! Quisquam expedita exercitationem similique minus eligendi aperiam quam vitae, tempore eius dolores quaerat autem?
+    </p>
+
+</body>
+
+<script>
+    const greeting=() =>{
+        console.log("hello there");
+        
+    }
+    // window.alert("hello")
+    let p =document.querySelector('p');
+
+    p.onclick = ()=>{
+        p.setAttribute('style','background-color: red;')
+    }
+
+    
+</script>
+</html>

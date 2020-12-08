@@ -37,7 +37,22 @@
 
         </div>
     </div>
+<script>
 
+    // retrev the element out of dom 
+    let bigredbutton= document.querySelector('#big-red-button')
+
+    //attach on click event listenr
+    let clickCount = 0;
+
+    let countDiv = document.querySelector("#count");
+
+
+    bigredbutton.onclick = ()=>{
+        clickCount++;
+        countDiv.textContent= clickCount.toString();
+    }
+</script>
 
     
 </body>
