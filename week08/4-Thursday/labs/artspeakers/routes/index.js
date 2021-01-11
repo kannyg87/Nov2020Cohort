@@ -1,19 +1,24 @@
-const express = require('express');
+const express = require("express");
 const router = express.Router();
-//because it is up on dir
-let dataFile = require('../data/data.json')
+let dataFile = require('../data/data.json');
+//{speakers: [{}, {}, {}]}
+router.get('/', (req, res) => {
+  
+    let pageSpeakers = dataFile.speakers;  ///array of speakers  [{}, {}, {}]
 
-router.get('/', (req,res)=>{
-    let pageSpeakers = dataFile.speakers;
+    
     let pagePhotos = [];
-    pageSpeakers.forEach(speakersObj =>{
-        pagePhotos = pagePhotos.concat(speakersObj.artwork)
+
+    
+    pageSpeakers.forEach(speakerObj =>{
+        pagePhotos = pagePhotos.concat(speakerObj.artwork)
     })
+
     console.log(pagePhotos);
 
-    res.render('index',{
-        photos:pagePhotos
-    })
-
+    res.render('index', {
+        photos: pagePhotos
+    });
+})
 
 module.exports = router;

@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+const axios = require('axios');
 
 let pictures = [
     "https://i.pinimg.com/originals/f4/01/0b/f4010b762ef1cd617f5e9a0a8ca0533a.jpg",
@@ -26,6 +27,10 @@ let cities = [
 ]
 
 router.get('/', (req, res) => {
+    axios.get('https://corona.lmao.ninja/v2/states')
+    .then(data =>{
+        console.log(data);
+    })
 
     res.render('index', {
         pic: pictures
@@ -53,7 +58,8 @@ router.get('/:id', (req, res) => {
   
     let id = req.params.id;
     res.render('index', {
-        pic: pictures[id]
+        pic: pictures[id],
+        names: nameArr
     })
 })
 

@@ -14,5 +14,29 @@ var nums = {
 
 // Write code here 
 
-console.log(sumObjectValues(nums));
+// function sumObjectValues(obj){
+//     let sum = 0;
+//     for (let key in obj){
+//         if (typeof(obj[key]) == "number"){
+//             sum += obj[key];
+//         } 
+        
+//     } 
+//     return sum;
+// }
+// console.log(sumObjectValues(nums));
+// 42
+
+
+function sumObjectValues(){
+    var sum = 0;
+    for (var key in nums){
+       if (typeof(nums[key])==="number"){
+            sum =+ nums[key];
+                }
+        return sum;
+    }
+}
+
+console.log(sumObjectValues(sum));
 // 42

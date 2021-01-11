@@ -13,10 +13,17 @@ it should return an object like this:
 */
 
 
-var nums = [10, -12, 30, -1, -8, 0, 14, -33, 20];
+var nums = [10,5, -12, 30, -1, -8, 0, 14, -33, 20];
 
-// Write code here
+function sumPlusMinus() {
+    var sum = 0;
+    for (var val of nums){
+        if( val>=0){
+            sum =+ val}
+            return sum;
+        } 
+    }
 
 console.log(sumPlusMinus(nums));
-// {plus: 74, minus: -54}
+
 

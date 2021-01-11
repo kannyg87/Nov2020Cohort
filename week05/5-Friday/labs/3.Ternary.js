@@ -10,8 +10,15 @@ function isNumber(a) {
         return "That's not a number";
 
     }
+
+    var isNumber = a => typeof (a)=="number"? "hat is a number" : "that os not a number"
+
+    console.log( "(a==number) ? that is a number : that os not a number");
 }
 console.log(isNumber(10));
 console.log(isNumber('hey there'));
 console.log(isNumber(true));
+
+let isNumber = a=> typeof(a) =="number"? that is a number : that os not a number"
+
 

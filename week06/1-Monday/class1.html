@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <form action="" method="GET">
+    <legend>first name</legend> 
+    <input type="text" name="first_name">
+    <legend>last name</legend> 
+    <input type="text" name="last_name">
+    <!-- <input type="radio"> -->
+    <!-- <input type="checkbox"> -->
+    <!-- <input type="password"> -->
+    <input type="submit">
+
+<br>
+<br>
+    <fieldset>first name </fieldset>
+    <input type="text" name="first_name" required maxlength="5">
+    <fieldset>last name</fieldset> 
+    <input type="text" name="last_name" required>
+    <legend>email</legend>
+    <input id="email"  type="email" name="email" required>
+    <input type="submit">
+   </form> 
+
+   <script>
+
+var email = document.getElementById("mail");
+email.addEventListener("input", (e)=>{
+        //e.target
+    if (email.validity.typeMismatch) {
+    email.setCustomValidity("I expect an e-mail, darling!");
+  } else {
+    email.setCustomValidity("");
+  }
+  
+});
+   </script>
+</body>
+</html>

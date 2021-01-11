@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tittle{
+            background-color: yellow;
+        }
+
+        .tittle1{
+
+            background-color:blue;
+        }
+    </style>
+</head>
+<body>
+    <p class="tittle">matt r</p>
+    <p class="tittle">matt p</p>
+    <p class="tittle">matt c</p>
+    <p class="tittle">joe</p>
+
+    <a href="http://yahoo.com">google</a>
+<script>
+    var names = document.getElementsByTagName('p');
+    
+    for(var index=0; index< names.length; index++){
+        names[index].textContent  +="student";}
+
+        var list = document.getElementsByTagName('a');
+        list.item(0).setAttribute('href', 'http://google.com')
+
+
+
+        var classn = document.getElementsByClassName('tittle');
+        for(var index=0; index< classn.length; index++){
+
+            classn[index].setAttribute('class','tittle1');
+        }
+
+
+</script>
+</body>
+
+</html>
