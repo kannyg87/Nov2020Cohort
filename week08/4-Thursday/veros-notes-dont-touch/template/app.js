@@ -2,6 +2,7 @@
 const express = require('express');
 
 const app = express();
+var reload = require('reload')
 
 app.set('view engine', 'ejs');
 
