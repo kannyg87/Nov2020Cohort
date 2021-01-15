@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
   },
   "author": "",
   "license": "ISC",
@@ -15,6 +16,7 @@
   "description": ""
 =======
     "express": "^4.17.1",
+    "reload": "^3.1.1",
     "socket.io": "^3.0.5"
   }
 >>>>>>> f7c35bebf32226280cb095448a55d62a822cd403
