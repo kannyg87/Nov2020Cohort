@@ -9,7 +9,13 @@
   "license": "ISC",
   "dependencies": {
     "ejs": "^3.1.5",
+<<<<<<< HEAD
     "express": "^4.17.1"
   },
   "description": ""
+=======
+    "express": "^4.17.1",
+    "socket.io": "^3.0.5"
+  }
+>>>>>>> f7c35bebf32226280cb095448a55d62a822cd403
 }

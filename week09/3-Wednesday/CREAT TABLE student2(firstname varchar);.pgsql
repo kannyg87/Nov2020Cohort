@@ -1,0 +1,1 @@
+CREAT TABLE student2(firstname varchar);
