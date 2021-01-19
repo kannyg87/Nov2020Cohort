@@ -1,1 +1,1 @@
-module.exports = "kanny"
+module.exports = "cokanny"
