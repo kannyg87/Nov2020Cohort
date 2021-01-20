@@ -1,4 +1,4 @@
-const pw = require("./config")
+const pw = require("../config")
 
 let config = {
   host: "localhost",
