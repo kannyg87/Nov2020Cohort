@@ -1,9 +1,10 @@
-
+const pw = require("../config")
 let config = {
     host: 'localhost',
     port: 5432,
     database: 'todo2020',
-    user: 'postgres'
+    user: 'postgres',
+    password: pw
 }
 
 let pgp = require('pg-promise')();
