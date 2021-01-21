@@ -8,7 +8,7 @@ router.use(express.urlencoded({extended: false}));
 
 
 router.get('/', (req,res) => {
-  
+    
     res.render('index')
 })
 
