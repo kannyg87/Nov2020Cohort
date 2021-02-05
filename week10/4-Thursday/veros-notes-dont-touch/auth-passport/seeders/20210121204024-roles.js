@@ -12,7 +12,8 @@ module.exports = {
      * }], {});
     */
 
-   await queryInterface.bulkInsert('roles', [{
+   await queryInterface.bulkInsert('roles', [
+     {
        name: 'General',
        roleType: 1,
        createdAt: new Date(), 
