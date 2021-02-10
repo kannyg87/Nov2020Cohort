@@ -26,7 +26,7 @@ class News extends Component {
             articles: data.articles
         }, ()=>{
 
-             console.log(this.state.articles);
+            console.log(this.state.articles);
 
         })
 

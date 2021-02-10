@@ -10,7 +10,7 @@ class NameList extends Component {
       })
 
       filteredData = this.props.searchVal === "" ? [] :filteredData;
-     return <>
+      return <>
 
         <ul>
             {filteredData.map(names =>(
