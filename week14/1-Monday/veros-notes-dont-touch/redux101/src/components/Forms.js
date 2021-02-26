@@ -20,6 +20,11 @@ const Forms = () => {
             lastName: lastName
         }));
 
+        // dispatch(removePerson({
+
+        //     firstName: firstName
+        // }))
+
         setFirstName('');
         setLastName('');
     }
@@ -34,6 +39,7 @@ const Forms = () => {
     <ul>
         {persons.map(person => {
         return <li key={person.firstName}>{person.firstName} {person.lastName} <button onClick={()=>dispatch(removePerson(person.firstName))}>X</button></li>
+        // return <li key={person.firstName}>{person.firstName} {person.lastName} <button onClick={()=>(person.firstName)}>X</button></li>
 
         })}
     </ul>

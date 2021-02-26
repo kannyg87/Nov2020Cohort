@@ -1,7 +1,11 @@
-import React from "react";
+import React,{useState, useEffect} from "react";
 
 const ConditionalRendering = () => {
-  return <></>;
+
+  const [isLoaded, setIsLoaded]= use
+  return <>
+  
+  </>;
 };
 
 export default ConditionalRendering;

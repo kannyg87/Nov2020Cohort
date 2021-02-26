@@ -84,7 +84,7 @@ class Forms extends Component {
 
               <input name="textValue" type="text" value={this.state.textValue}
                 onChange={this.handleChange}
-               />
+              />
 
               <br/>
 

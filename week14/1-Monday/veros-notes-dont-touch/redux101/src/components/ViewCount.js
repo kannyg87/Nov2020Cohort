@@ -18,3 +18,4 @@ const mapStateToProps = (state) => {
 }
 
 export default connect(mapStateToProps, null)(ViewCount);
+// export default ViewCount

@@ -1,0 +1,12 @@
+body{
+    background-color: rgb(131, 131, 165);
+}
+
+.formColor{
+    background-color: rgb(148, 81, 81);
+}
+
+.formFont{
+    font-size: 18px;
+    font-family: 'courier New','';
+}

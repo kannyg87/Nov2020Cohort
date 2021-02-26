@@ -10,10 +10,16 @@ import {
 } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import reducer from './reducers/cartReducer'
+import {createStore} from 'redux'
+import {Provider} from 'react-redux'
+
+let store createStore(reducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
 
 ReactDOM.render(
   <React.StrictMode>
+    <Provider store={store}>
     <Router>
       <BaseLayout>
         <Switch>
@@ -24,6 +30,7 @@ ReactDOM.render(
         </Switch>
       </BaseLayout>
     </Router>
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
